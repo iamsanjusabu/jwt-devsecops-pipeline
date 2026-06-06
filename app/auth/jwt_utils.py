@@ -8,6 +8,8 @@ from fastapi import HTTPException
 load_dotenv()
 
 SECRET_KEY: str =  getenv("SECRET_KEY")
+
+# HS256
 ALGORITHM: str = getenv("ALGORITHM")
 ACCESS_TOKEN_EXPIRE_MINUTES: int = int(getenv("ACCESS_TOKEN_EXPIRE_MINUTES"))
 
